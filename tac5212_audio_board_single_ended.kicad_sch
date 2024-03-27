@@ -12296,6 +12296,12 @@
 		(uuid "cb80e5b8-7581-4f40-b2a3-4f54073c1879")
 	)
 	(junction
+		(at 68.58 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cbb0bf3d-756b-44d8-b025-c88766963876")
+	)
+	(junction
 		(at 58.42 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12969,7 +12975,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 83.82) (xy 81.28 83.82)
+			(xy 52.07 83.82) (xy 68.58 83.82)
 		)
 		(stroke
 			(width 0)
@@ -13319,6 +13325,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 100.33) (xy 68.58 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5363bbed-70aa-4170-8bd1-81fa2214d45b")
+	)
+	(wire
+		(pts
 			(xy 205.74 316.23) (xy 231.14 316.23)
 		)
 		(stroke
@@ -13456,6 +13472,16 @@
 			(type default)
 		)
 		(uuid "6326b559-7798-4805-b3b1-b56f9620d6a6")
+	)
+	(wire
+		(pts
+			(xy 68.58 100.33) (xy 68.58 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63551812-2927-4386-9770-9126ae3d15e9")
 	)
 	(wire
 		(pts
@@ -14639,7 +14665,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 369.57) (xy 243.84 369.57)
+			(xy 219.71 364.49) (xy 231.14 364.49)
 		)
 		(stroke
 			(width 0)
@@ -14706,6 +14732,16 @@
 			(type default)
 		)
 		(uuid "ca1f64bb-0c7e-4ba2-9e47-6e380d828d61")
+	)
+	(wire
+		(pts
+			(xy 68.58 83.82) (xy 81.28 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "caf98fca-31a2-4f0e-adee-008db610555e")
 	)
 	(wire
 		(pts
@@ -15499,13 +15535,13 @@
 		(uuid "038f2775-00ff-4463-96f3-b76263b18b0b")
 	)
 	(label "MICBIAS"
-		(at 231.14 369.57 180)
+		(at 243.84 369.57 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "085cb51b-8ee5-4a96-a041-c2be8d42e875")
 	)
@@ -15554,13 +15590,13 @@
 		(uuid "2d959138-2e5e-46fa-a0f6-eeff0577636d")
 	)
 	(label "GPIO1"
-		(at 231.14 364.49 180)
+		(at 243.84 364.49 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "32f861b0-0d62-4fa0-8bd6-39ab9bf15088")
 	)
@@ -15664,13 +15700,13 @@
 		(uuid "7dd387d1-53b6-44ba-a1c2-96944eb03e5b")
 	)
 	(label "GPO1"
-		(at 231.14 367.03 180)
+		(at 243.84 367.03 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "7e11c987-49bf-49fa-8874-48310e4f3282")
 	)
@@ -15719,13 +15755,13 @@
 		(uuid "8f843638-7585-44f7-b0e3-4e0a9100209e")
 	)
 	(label "GPIO2"
-		(at 243.84 364.49 0)
+		(at 231.14 367.03 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "915958ef-cba8-45c2-a625-9907013f8d04")
 	)
@@ -15840,13 +15876,13 @@
 		(uuid "de32d4d5-4274-48a2-9ddb-964fa2405fcc")
 	)
 	(label "GPI1"
-		(at 243.84 367.03 0)
+		(at 231.14 369.57 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "de879ed8-7ae6-492c-8679-43a7759c6cc3")
 	)
@@ -15915,28 +15951,6 @@
 			(justify left bottom)
 		)
 		(uuid "fafe462d-265a-4a8f-9dff-2635defc0f3a")
-	)
-	(global_label "DSP_DATA_IN"
-		(shape input)
-		(at 205.74 323.85 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 0.8 0.8)
-			)
-			(justify right)
-		)
-		(uuid "0240ed82-0652-4461-a662-156e1604b8aa")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 196.2788 323.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
 	)
 	(global_label "5V"
 		(shape input)
@@ -16092,28 +16106,6 @@
 			)
 		)
 	)
-	(global_label "DSP_DATA_OUT"
-		(shape input)
-		(at 205.74 326.39 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 0.8 0.8)
-			)
-			(justify right)
-		)
-		(uuid "0ccf5c14-8c54-48e8-9915-f5935220bb12")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 195.2122 326.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "OUT2P"
 		(shape input)
 		(at 152.4 77.47 0)
@@ -16220,6 +16212,28 @@
 					(size 1.524 1.524)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "5212_DOUT1+"
+		(shape input)
+		(at 205.74 323.85 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right)
+		)
+		(uuid "1620c9c4-0eee-4805-8447-9c61780ed544")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 195.3645 323.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -16598,6 +16612,28 @@
 			)
 		)
 	)
+	(global_label "5212_DIN1"
+		(shape input)
+		(at 205.74 326.39 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify right)
+		)
+		(uuid "36c30840-fcd3-4fc9-8002-5526f8c91227")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 197.4216 326.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "AUX1L"
 		(shape input)
 		(at -15.24 596.9 180)
@@ -16614,6 +16650,28 @@
 			(effects
 				(font
 					(size 1.524 1.524)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "5212_MCLK1"
+		(shape input)
+		(at 55.88 100.33 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "388c7873-d8d0-4eee-b1c3-a96af55521be")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 40.8602 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 				(justify right)
 				(hide yes)
@@ -23756,6 +23814,100 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:Jumper_2_Bridged")
+		(at 60.96 100.33 180)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4be506fc-d95a-4519-9ad4-8c6f78f8335e")
+		(property "Reference" "MCLK1"
+			(at 60.96 105.537 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "jumper"
+			(at 60.96 103.2256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "project_fp:jumper_slice"
+			(at 60.96 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, closed/bridged"
+			(at 60.96 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PCBWAY_2020_04_18" "NO COMPONENT"
+			(at 60.96 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PCBWAY_2020-06-09" "NO COMPONENT"
+			(at 60.96 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PCBWAY_2020-08-27" "NO COMPONENT"
+			(at 60.96 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d887b685-8631-454a-a6bc-72bab394bb84")
+		)
+		(pin "2"
+			(uuid "52b27b21-02c1-4fd0-b547-c7a529ad9609")
+		)
+		(instances
+			(project "tac5212_audio_board_single_ended"
+				(path "/8cee3af6-3893-45a9-89a4-21657973eeff"
+					(reference "MCLK1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 83.82 88.9 90)
 		(unit 1)
@@ -28799,7 +28951,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDD")
-		(at 255.27 369.57 0)
+		(at 219.71 364.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -28807,7 +28959,7 @@
 		(dnp no)
 		(uuid "af0ee138-b265-443c-9a41-d35cf2c2c8c2")
 		(property "Reference" "#PWR011"
-			(at 255.27 375.92 0)
+			(at 219.71 370.84 0)
 			(effects
 				(font
 					(size 1 1)
@@ -28816,7 +28968,7 @@
 			)
 		)
 		(property "Value" "GNDD"
-			(at 255.27 385.572 0)
+			(at 219.71 380.492 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -28825,7 +28977,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 369.57 0)
+			(at 219.71 364.49 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -28834,7 +28986,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 369.57 0)
+			(at 219.71 364.49 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -28843,7 +28995,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 255.27 369.57 0)
+			(at 219.71 364.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
