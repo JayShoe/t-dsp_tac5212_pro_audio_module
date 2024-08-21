@@ -10990,7 +10990,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "3231bc24-1064-43bb-8477-d16427a71b7b")
 		(property "Reference" "board_outline1"
 			(at 91.44 217.17 0)
